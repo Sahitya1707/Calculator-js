@@ -146,6 +146,9 @@ h2 {
   .input {
     width: 50px;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .reset-equal div {
     width: 120px;
