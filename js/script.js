@@ -36,7 +36,7 @@ function afterResult() {
 function pressEqual() {
   // result = (question.innerText);
   // console.log(result);
-  result = Function("return" + question.innerText);
+  result = Function("return " + `${question.innerText}`)();
   resultDisplay.innerText = result;
   console.log(result);
   question.classList.add("input-display");
