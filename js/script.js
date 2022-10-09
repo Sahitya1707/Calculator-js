@@ -92,6 +92,7 @@ function removeText() {
 }
 del.addEventListener("click", function () {
   removeText();
+  afterResult();
 });
 document.addEventListener("keydown", (e) => {
   if (e.key === `Backspace`) {
@@ -100,7 +101,7 @@ document.addEventListener("keydown", (e) => {
   }
   if (e.key === `=` || e.key === `Enter`) {
     pressEqual();
-    afterResult();
+    // afterResult();
   }
 });
 equal.addEventListener("click", function () {
