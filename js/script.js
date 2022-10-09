@@ -34,9 +34,11 @@ function afterResult() {
   // question.innerText = `${result}`;
 }
 function pressEqual() {
-  result = eval(question.innerText);
-  console.log(result);
+  // result = (question.innerText);
+  // console.log(result);
+  result = Function("return" + question.innerText);
   resultDisplay.innerText = result;
+  console.log(result);
   question.classList.add("input-display");
   resultDisplay.classList.remove("hidden");
 }
